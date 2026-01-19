@@ -1,0 +1,12 @@
+flask
+langchain-community
+langchain-huggingface
+langchain-milvus
+pypdf
+langchain-ollama
+langchain-chroma
+sentence-transformers
+milvus-lite
+huggingface_hub
+# The line below installs the IBM tools from GitHub
+git+https://github.com/ibm-granite-community/utils.git
