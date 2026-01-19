@@ -70,7 +70,6 @@ One challenge was making sure the AI didn't hallucinate (make things up). I had 
 ### 2. The AI "Thinking"
 ![opera_JzcfX8DpKn](https://github.com/user-attachments/assets/6c5e5bc8-468e-4190-9081-a838ba0bc7f1)
 
-
 *Here you can see the model processing the query against the Factories Act.*
 
 ---
