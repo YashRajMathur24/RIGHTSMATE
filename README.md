@@ -1,7 +1,5 @@
 # 🛡️ RightsMate: The Labor Rights Defender
 
-### A Student Project for the 1M1B AI + Sustainability Internship
-
 ## The Idea
 
 Let's be real: nobody reads the Terms & Conditions. Now imagine you are a factory worker or a delivery driver, and your employment contract is a 50-page PDF full of confusing legal jargon. You wouldn't know if you were signing away your rights to overtime pay or sick leave.
