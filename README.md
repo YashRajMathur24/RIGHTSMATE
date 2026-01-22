@@ -39,16 +39,8 @@ I didn't want just a "summary tool" because summaries can miss details. I needed
 
 I used a local AI setup for this prototype to keep it free and private. Here is how the data flows through the app:
 
-```mermaid
-graph TD
-    User[User Uploads PDF] -->|Splits into chunks| App[Python App]
-    App -->|Creates Embeddings| VectorDB[(ChromaDB)]
-    
-    Question[User Asks: 'What about overtime?'] -->|Search| VectorDB
-    VectorDB -->|Finds relevant paragraph| AI[IBM Granite / Ollama]
-    AI -->|Simplifies answer| Chat[Chat Interface]
+<img width="848" height="1880" alt="document_qa" src="https://github.com/user-attachments/assets/7e891aa1-8667-4717-b170-58c7c417399d" />
 
-```
 
 ### The "Prompt Logic"
 
