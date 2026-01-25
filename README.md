@@ -4,7 +4,7 @@
 ![Tech](https://img.shields.io/badge/Tech-Python%20%7C%20Bot%20Framework-blue)
 ![SDG](https://img.shields.io/badge/SDG-8_Decent_Work-AA1C37)
 
-## The Idea
+## ✨ The Idea
 
 Let's be real: nobody reads the Terms & Conditions. Now imagine you are a factory worker or a delivery driver, and your employment contract is a 50-page PDF full of confusing legal jargon. You wouldn't know if you were signing away your rights to overtime pay or sick leave.
 
@@ -65,7 +65,7 @@ One challenge was making sure the AI didn't hallucinate (make things up). I had 
 
 ---
 
-## 🐛 Challenges I Faced (Real Talk)
+## 🐛 Challenges I Faced
 
 Building this wasn't exactly smooth sailing.
 
@@ -89,9 +89,6 @@ If I had more time and resources, here is what I'd add:
 * **Framework:** Flask (for the web app)
 * **AI Engine:** LangChain + Ollama (IBM Granite Model)
 * **Database:** ChromaDB (Vector Store)
-
-### 📊 Languages Used
-![HTML](https://img.shields.io/badge/HTML-59.8%25-orange) ![Python](https://img.shields.io/badge/Python-40.2%25-blue)
 
 ---
 
