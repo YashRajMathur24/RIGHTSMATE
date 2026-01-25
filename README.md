@@ -1,5 +1,9 @@
 # 🛡️ RightsMate: The Labor Rights Defender
 
+![Status](https://img.shields.io/badge/Status-Prototype-success)
+![Tech](https://img.shields.io/badge/Tech-Python%20%7C%20Bot%20Framework-blue)
+![SDG](https://img.shields.io/badge/SDG-8_Decent_Work-AA1C37)
+
 ## The Idea
 
 Let's be real: nobody reads the Terms & Conditions. Now imagine you are a factory worker or a delivery driver, and your employment contract is a 50-page PDF full of confusing legal jargon. You wouldn't know if you were signing away your rights to overtime pay or sick leave.
@@ -8,6 +12,7 @@ That's why I built **RightsMate**.
 
 It's a simple tool where you upload a complicated labor law document (like the *Factories Act*), and it lets you chat with it. You ask, "Can my boss fire me without notice?" and it gives you a straight answer based on the actual rules, not a Google guess.
 
+---
 
 ## 🌍 The SDG Connection
 
@@ -19,18 +24,14 @@ Specifically, it targets **Target 8.8**, which is about protecting labor rights.
 ## 💡 How I approached this (Design Thinking)
 
 ### 1. Empathize (The "Why")
-
 I started by looking at who actually suffers from bad labor laws. It's usually people who can't afford lawyers—interns, daily wage workers, and factory staff. They face a huge barrier: **Language**. Legal English is basically a foreign language to most people.
 
 ### 2. Define (The Problem)
-
 * **The Problem:** Workers are vulnerable to exploitation (like unpaid dues or unsafe conditions) because they don't understand their contracts.
 * **The Goal:** Build a "translator" that turns legal docs into simple, actionable advice.
 
 ### 3. Ideate (The Solution)
-
 I didn't want just a "summary tool" because summaries can miss details. I needed a bot that could answer *specific* questions.
-
 * *Idea:* Use **RAG (Retrieval Augmented Generation)**. This allows the AI to "read" the specific PDF I give it and answer from that text only.
 
 ---
@@ -39,11 +40,11 @@ I didn't want just a "summary tool" because summaries can miss details. I needed
 
 I used a local AI setup for this prototype to keep it free and private. Here is how the data flows through the app:
 
-<img width="848" height="1880" alt="document_qa" src="https://github.com/user-attachments/assets/7e891aa1-8667-4717-b170-58c7c417399d" />
-
+<div align="center">
+  <img width="600" alt="RAG Architecture Diagram" src="https://github.com/user-attachments/assets/7e891aa1-8667-4717-b170-58c7c417399d" />
+</div>
 
 ### The "Prompt Logic"
-
 One challenge was making sure the AI didn't hallucinate (make things up). I had to tune the system prompt to be strict.
 
 > **My Prompt:** "You are RightsMate. Answer the user's question using ONLY the context provided below. If the answer isn't in the document, say 'I don't know.' Keep your language simple and helpful."
@@ -53,12 +54,12 @@ One challenge was making sure the AI didn't hallucinate (make things up). I had 
 ## 📸 Project Screenshots
 
 ### 1. The Home Screen
-<img width="1278" height="715" alt="image" src="https://github.com/user-attachments/assets/457e7dfa-0b30-405a-82fa-a4ff3e6ed0bf" />
+<img width="100%" alt="Home Screen Interface" src="https://github.com/user-attachments/assets/457e7dfa-0b30-405a-82fa-a4ff3e6ed0bf" />
 
 *The interface is kept super clean so it's not intimidating.*
 
 ### 2. The AI "Thinking"
-![opera_JzcfX8DpKn](https://github.com/user-attachments/assets/6c5e5bc8-468e-4190-9081-a838ba0bc7f1)
+<img width="100%" alt="AI Processing Query" src="https://github.com/user-attachments/assets/6c5e5bc8-468e-4190-9081-a838ba0bc7f1" />
 
 *Here you can see the model processing the query against the Factories Act.*
 
@@ -76,7 +77,6 @@ Building this wasn't exactly smooth sailing.
 ## 🚀 Future Scope (What's Next?)
 
 If I had more time and resources, here is what I'd add:
-
 * **Voice Support:** Many target users might not be comfortable typing. Adding a "Speak" button would be a game-changer.
 * **Multilingual Support:** Right now it works in English. I want to plug in a translation layer so a worker can ask in Hindi and get an answer in Hindi, even if the law is in English.
 * **Cloud Deployment:** Moving this from my laptop to a proper cloud server so the responses are instant.
@@ -87,8 +87,11 @@ If I had more time and resources, here is what I'd add:
 
 * **Language:** Python 3.12
 * **Framework:** Flask (for the web app)
-* **AI Engine:** LangChain + Ollama
+* **AI Engine:** LangChain + Ollama (IBM Granite Model)
 * **Database:** ChromaDB (Vector Store)
+
+### 📊 Languages Used
+![HTML](https://img.shields.io/badge/HTML-59.8%25-orange) ![Python](https://img.shields.io/badge/Python-40.2%25-blue)
 
 ---
 
